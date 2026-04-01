@@ -203,9 +203,9 @@
         },
         if qianfaren != "" {
           align(right)[
-            #text(size: zh(3))[签发人：]
-            #if type(qianfaren) == array { qianfaren.join("、") } else { qianfaren }
-          ]
+            #text(size: zh(3))[签发人：]#text(font: ("Times New Roman", "FandolKai"))[
+              #if type(qianfaren) == array { qianfaren.join("、") } else { qianfaren }
+            ]]
         } else {
           []
         },
